@@ -12,7 +12,7 @@ public class Database {
 		Connection connection =  null;
 		
 		// Store the database URL in a string
-		String url = "jdbc:mysql://cloudservice.csa2yphklgn8.us-east-1.rds.amazonaws.com:3306/classicmodels"; 
+		String url = "jdbc:mysql://cloudservice.csa2yphklgn8.us-east-1.rds.amazonaws.com:3306/classicmodels?autoReconnect=true"; 
 		
 		Class.forName("com.mysql.jdbc.Driver").newInstance();
 		
