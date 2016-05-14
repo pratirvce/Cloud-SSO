@@ -9,7 +9,7 @@ public class DataBaseConnectionProvider {
 
     private DataBaseConnectionProvider() throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
-        connection = DriverManager.getConnection(
+        connection = new DriverManager.getConnection(
                 "jdbc:mysql://cloudservice.csa2yphklgn8.us-east-1.rds.amazonaws.com:3306/classicmodels?autoReconnect=true",
                 "root", "cloud007");
     }
